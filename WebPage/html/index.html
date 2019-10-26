@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delícias da Nane</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h1><img src="img/Logo.png" alt="Logo Delicias da Nane"></h1>
+        <p class="sacola"> Nenhum item na sacola de compras.</p>
+    </header>
+
+    <div class="container">
+        <div id="banner">
+            <nav>
+                <ul class="navegacao">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="destaque">
+            <div class="busca">
+                <h2>Busca</h2>
+                <form>
+                    <input type="search">
+                    <button>Buscar</button>
+                </form>
+            </div>
+            <!-- fim .busca -->
+            <div class="menu-produtos">
+                <h2>Produtos</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#">Bolos de Corte</a></li>
+                        <li>
+                            <a href="#">Bolos de Pote</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Tradicionais</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Beijinho</a></li>
+                                        <li><a href="#">Brigadeiro</a></li>
+                                        <li><a href="#">Churros</a></li>
+                                        <li><a href="#">Danette</a></li>
+                                        <li><a href="#">Limão</a></li>
+                                        <li><a href="#">Limão c/ Brigadeiro</a></li>
+                                        <li><a href="#">Maracujá</a></li>
+                                        <li><a href="#">Paçoca</a></li>
+                                        <li><a href="#">Paçoca c/ Brigadeiro</a></li>
+                                        <li><a href="#">Prestígio</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Premium</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Abacaxi c/ Coco</a></li>
+                                        <li><a href="#">Banana Caramelada</a></li>
+                                        <li><a href="#">floresta negra</a></li>
+                                        <li><a href="#">Maracujá c/ chantily</a></li>
+                                        <li><a href="#">morango c/ nutella</a></li>
+                                        <li><a href="#">ninho c/ morango</a></li>
+                                        <li><a href="#">ninho c/ nutella</a></li>
+                                        <li><a href="#">nutella c/ M&Ms</a></li>
+                                        <li><a href="#">Oreo</a></li>
+                                        <li><a href="#">ovomaltine</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">CupCakes</a></li>
+                        <li><a href="#">Docinhos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- fim .menu-departamentos -->
+            <div class="painel-destaque">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/destaque-home.png" alt="Primeiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/cupcakes.jpg" alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/Cartao.png" alt="Terceiro Slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+            <!-- fim .banner-destaque -->
+
+
+            <div class="painel-novidades">
+                <h2>Novidades</h2>
+                <ol>
+                    <li>
+                        <a href="produto.html">
+                            <figure>
+                                <img src="img/limao.jpg" alt="Fuzz Cardigan">
+                                <figcaption>Fuzz Cardigan - R$ 129,90</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="produto.html">
+                            <figure>
+                                <img src="img/prestigio.jpg" alt="Camiseta Roxa The Bone">
+                                <figcaption>Camiseta roxa The Bone - R$ 39,90</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="produto.html">
+                            <figure>
+                                <img src="img/Morango-Nutella.jpg" alt="Fuzz Cardigan Verde">
+                                <figcaption>Fuzz Cardigan verde - R$ 99,90</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <img src="img/Logo.png" alt="Logo Delicias da Nane">
+            <ul class="social">
+                <li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
+                <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
+                <li><a href="https://www.instagram.com/?hl=pt-br">instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+<script type="text/javascript">
+    startList = function () {
+        if (document.all && document.getElementById) {
+            navRoot = document.getElementById("menuDropDown");
+            for (i = 0; i < navRoot.childNodes.length; i++) {
+                node = navRoot.childNodes[i];
+                if (node.nodeName == "LI") {
+                    node.onmouseover = function () {
+                        this.className += " over";
+                    }
+                    node.onmouseout = function () {
+                        this.className = this.className.replace
+                            (" over", "");
+                    }
+                }
+            }
+        }
+    }
+    window.onload = startList;
+</script>
+<script src="JavaScript/jquery-3.4.1.slim.min.js"></script>
+<script src="JavaScript/popper.js"></script>
+<script src="JavaScript/bootstrap.min.js"></script>
+
+</html>

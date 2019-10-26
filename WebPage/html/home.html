@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delícias da Nane</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/mdb.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header class="transition">
+
+        <div class="navegacao">
+            <ul class="menu clearfix">
+                <li><a href="#home">home</a></li>
+                <li><a href="delicias.html">delícias</a>
+                    <!-- Nível 1 -->
+                    <!-- submenu -->
+                    <ul class="sub-menu clearfix">
+                        <li><a href="#">Bolos de Corte</a></li>
+                        <li><a href="#">Bolos de Pote</a>
+                            <!-- Nível 2 -->
+                            <!-- submenu do submenu -->
+                            <ul class="sub-menu">
+                                <li><a href="#">Tradicionais</a>
+                                    <!-- Nível 3 -->
+                                    <!-- submenu do submenu do submenu -->
+                                    <ul class="sub-menu">
+                                        <li><a href="#">beijinho</a></li>
+                                        <li><a href="#">Brigadeiro</a></li>
+                                        <li><a href="#">churros</a></li>
+                                        <li><a href="#">danette</a></li>
+                                        <li><a href="#">limão</a></li>
+                                        <li><a href="#">limão c/ brigadeiro</a></li>
+                                        <li><a href="#">maracujá</a></li>
+                                        <li><a href="#">paçoca</a></li>
+                                        <li><a href="#">paçoca c/ brigadeiro</a></li>
+                                        <li><a href="#">prestígio</a></li>
+                                    </ul><!-- submenu do submenu do submenu -->
+                                </li>
+                                <li><a href="#">Premium</a>
+                                    <!-- Nível 3 -->
+                                    <!-- submenu do submenu do submenu -->
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Abacaxi c/ coco</a></li>
+                                        <li><a href="#">banana caramelada</a></li>
+                                        <li><a href="#">floresta negra</a></li>
+                                        <li><a href="#">maracujá c/ chantilly</a></li>
+                                        <li><a href="#">morango c/ nutella</a></li>
+                                        <li><a href="#">ninho c/ morango</a></li>
+                                        <li><a href="#">ninho c/ nutella</a></li>
+                                        <li><a href="#">nutella c/ m&ms</a></li>
+                                        <li><a href="#">oreo</a></li>
+                                        <li><a href="#">ovomaltine</a></li>
+                                    </ul><!-- submenu do submenu do submenu -->
+                                </li>
+                            </ul><!-- submenu do submenu -->
+                        </li>
+                        <li><a href="#">cupcakes</a></li>
+                        <li><a href="#">docinhos</a></li>
+                    </ul><!-- submenu -->
+                </li>
+                <li><a href="#sobre">sobre</a></li>
+                <li><a href="#contato">contato</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <figure>
+                <img src="../img/Logo.png" alt="Logo Delícias da Nane">
+            </figure>
+        </div>
+        <section class="busca">
+            <nav class="navbar navbar-light">
+                <!-- Modal -->
+                <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <!--Content-->
+                        <div class="modal-content form-elegant h-75">
+                            <!--Header-->
+                            <div class="modal-header text-center">
+                                <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel">
+                                    <strong>Sign in</strong></h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!--Body-->
+                            <div class="modal-body mx-4">
+                                <!--Body-->
+                                <div class="md-form mb-5">
+                                    <input type="email" id="Form-email1" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                                </div>
+
+                                <div class="md-form pb-3">
+                                    <input type="password" id="Form-pass1" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="Form-pass1">Your
+                                        password</label>
+                                    <p class="font-small blue-text d-flex justify-content-end">Forgot<a href="#"
+                                            class="blue-text ml-1">Password?</a></p>
+                                </div>
+
+                                <div class="text-center mb-3">
+                                    <button type="button"
+                                        class="btn purple-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+                                </div>
+                                <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2">
+                                    or Sign in with:</p>
+
+                                <div class="row my-3 d-flex justify-content-center">
+                                    <!--Facebook-->
+                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i
+                                            class="fab fa-facebook-f text-center"></i></button>
+                                    <!--Twitter-->
+                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i
+                                            class="fab fa-twitter"></i></button>
+                                    <!--Google +-->
+                                    <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i
+                                            class="fab fa-google-plus-g"></i></button>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer mx-5 pt-3 mb-1">
+                                <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#"
+                                        class="blue-text ml-1"> Sign Up</a></p>
+                            </div>
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+                <!-- Modal -->
+
+                <div class="text-center">
+                    <a href="" class="btn purple-gradient btn-rounded" data-toggle="modal" data-target="#elegantModalForm">login</a>
+                </div>
+            </nav>
+
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn  btn-outline-info" type="submit">Pesquisar</button>
+            </form>
+        </section>
+    </header>
+
+
+
+    <div id="home" class="corpo">
+
+
+        <div class="frontal">
+            <img src="../img/Logo.png">
+        </div>
+
+
+
+        <div id="sobre" class="sobre">
+            <div class="porCima">
+                <p id="h1"><b>Nossa História</b></p>
+                <p id="h2">Sobre Nós</p>
+                <div id="texto">
+                    <p>
+                        Há muito tempo tenho paixão em cozinhar e fazer doces, bolos e sobremesas. Comecei a fazer
+                        cupcakes
+                        e docinhos para as festas de família, nada muito elaborado, e todos achavam deliciosos. Então
+                        algumas pessoas por gostarem, começaram a fazer encomendas e sugerirem que que fizesse desse
+                        hobby
+                        uma fonte de renda. Depois de algum tempo pensando no assunto pensei que poderia ajudar nas
+                        despesas
+                        da casa, inseri o que fazia para familia nos potes de bolos e passei a oferece-los. Conclusão: o
+                        que
+                        era
+                        apenas um hobby, coisa de família, passou a ser um sucesso de vendas. Surgiu então a marca
+                        "Delícias
+                        da
+                        Nane".
+                    </p>
+                </div>
+
+                <p>Rosane Moraes - Fundadora</p>
+
+            </div>
+            <video autoplay="autoplay" muted loop>
+                <source src="../img/Chocolate.mp4" type="video/Mp4">
+            </video>
+        </div>
+
+
+        <div id="contato" class="contato">
+
+            <!-- Section: Contact v.2 -->
+            <section class="my-5">
+
+                <!-- Section heading -->
+                <h2 class="h1-responsive font-weight-bold text-center">Entre em Contato!</h2>
+                <h4>Delicias da Nane</h4>
+
+                <!-- Section description -->
+                <p class="text-center w-responsive mx-auto my-5">Para quaisquer sugestões, dicas ou reclamações, entre
+                    em contato conosco
+                    através do nosso formulário abaixo.<br /> Estaremos aqui para ouvi-lo, sempre!</p>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-9 mb-md-0 mb-5">
+
+                        <form>
+
+                            <!-- Grid row -->
+                            <div class="row">
+
+                                <!-- Grid column -->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="contact-name" class="form-control">
+                                        <label for="contact-name" class="">Seu nome</label>
+                                    </div>
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="contact-email" class="form-control">
+                                        <label for="contact-email" class="">Seu e-mail</label>
+                                    </div>
+                                </div>
+                                <!-- Grid column -->
+
+                            </div>
+                            <!-- Grid row -->
+
+                            <!-- Grid row -->
+                            <div class="row">
+
+                                <!-- Grid column -->
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="contact-Subject" class="form-control">
+                                        <label for="contact-Subject" class="">Assunto</label>
+                                    </div>
+                                </div>
+                                <!-- Grid column -->
+
+                            </div>
+                            <!-- Grid row -->
+
+                            <!-- Grid row -->
+                            <div class="row">
+
+                                <!-- Grid column -->
+                                <div class="col-md-12">
+                                    <div class="md-form">
+                                        <textarea id="contact-message" class="form-control md-textarea"
+                                            rows="3"></textarea>
+                                        <label for="contact-message">Sua mensagem</label>
+                                    </div>
+                                </div>
+                                <!-- Grid column -->
+
+                            </div>
+                            <!-- Grid row -->
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-success btn-md">Enviar</a>
+                        </div>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <i class="fas fa-map-marker-alt fa-2x blue-text"></i>
+                                <p>Cascatinha, Petrópolis - RJ.</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone fa-2x mt-4 blue-text"></i>
+                                <p>+ 55 24 XXXXX-XXXXX</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope fa-2x mt-4 blue-text"></i>
+                                <p class="mb-0">contato@deliciasdanane.com.br</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </section>
+            <!-- Section: Contact v.2 -->
+        </div>
+    </div>
+
+
+
+    <!--INÍCIO CÓDIGO FOOTER-->
+    <footer class="page-footer font-small pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+                    <!-- Form -->
+                    <form class="form-inline">
+                        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Pesquisa"
+                            aria-label="Search">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </form>
+                    <!-- Form -->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <form class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Seu e-mail"
+                            aria-label="Your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-outline-white my-0" type="button">Assinar</button>
+                        </div>
+                    </form>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            <!-- Grid row-->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+                    <div class="mb-5 flex-center">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg blue-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter fa-lg cyan-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in fa-lg blue-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram fa-lg purple-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+
+    </footer>
+
+
+
+
+
+
+</body>
+
+
+
+<script src="../JavaScript/jquery-3.4.1.min.js"></script>
+<script src="../JavaScript/popper.js"></script>
+<script src="../JavaScript/bootstrap.min.js"></script>
+<script src="../JavaScript/mdb.min.js"></script>
+<script src="../JavaScript/scritp-index.js"></script>
+
+
+</html>

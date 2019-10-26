@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delícias da Nane</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/delicias.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/mdb.min.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header class="transition">
+
+        <div class="navegacao">
+            <ul class="menu clearfix">
+                <li><a href="home.html">home</a></li>
+                <li><a href="#">delícias</a>
+                    <!-- Nível 1 -->
+                    <!-- submenu -->
+                    <ul class="sub-menu clearfix">
+                        <li><a href="#">Bolos de Corte</a></li>
+                        <li><a href="#">Bolos de Pote</a>
+                            <!-- Nível 2 -->
+                            <!-- submenu do submenu -->
+                            <ul class="sub-menu">
+                                <li><a href="#">Tradicionais</a>
+                                    <!-- Nível 3 -->
+                                    <!-- submenu do submenu do submenu -->
+                                    <ul class="sub-menu">
+                                        <li><a href="#">beijinho</a></li>
+                                        <li><a href="#">Brigadeiro</a></li>
+                                        <li><a href="#">churros</a></li>
+                                        <li><a href="#">danette</a></li>
+                                        <li><a href="#">limão</a></li>
+                                        <li><a href="#">limão c/ brigadeiro</a></li>
+                                        <li><a href="#">maracujá</a></li>
+                                        <li><a href="#">paçoca</a></li>
+                                        <li><a href="#">paçoca c/ brigadeiro</a></li>
+                                        <li><a href="#">prestígio</a></li>
+                                    </ul><!-- submenu do submenu do submenu -->
+                                </li>
+                                <li><a href="#">Premium</a>
+                                    <!-- Nível 3 -->
+                                    <!-- submenu do submenu do submenu -->
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Abacaxi c/ coco</a></li>
+                                        <li><a href="#">banana caramelada</a></li>
+                                        <li><a href="#">floresta negra</a></li>
+                                        <li><a href="#">maracujá c/ chantilly</a></li>
+                                        <li><a href="#">morango c/ nutella</a></li>
+                                        <li><a href="#">ninho c/ morango</a></li>
+                                        <li><a href="#">ninho c/ nutella</a></li>
+                                        <li><a href="#">nutella c/ m&ms</a></li>
+                                        <li><a href="#">oreo</a></li>
+                                        <li><a href="#">ovomaltine</a></li>
+                                    </ul><!-- submenu do submenu do submenu -->
+                                </li>
+                            </ul><!-- submenu do submenu -->
+                        </li>
+                        <li><a href="#">cupcakes</a></li>
+                        <li><a href="#">docinhos</a></li>
+                    </ul><!-- submenu -->
+                </li>
+                <li><a href="home.html#sobre">sobre</a></li>
+                <li><a href="home.html#contato">contato</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <figure>
+                <img src="../img/Logo.png" alt="Logo Delícias da Nane">
+            </figure>
+        </div>
+        <section class="busca">
+            <nav class="navbar navbar-light">
+                <!-- Modal -->
+                <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <!--Content-->
+                        <div class="modal-content form-elegant">
+                            <!--Header-->
+                            <div class="modal-header text-center">
+                                <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel">
+                                    <strong>Sign in</strong></h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!--Body-->
+                            <div class="modal-body mx-4">
+                                <!--Body-->
+                                <div class="md-form mb-5">
+                                    <input type="email" id="Form-email1" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="Form-email1">Your email</label>
+                                </div>
+
+                                <div class="md-form pb-3">
+                                    <input type="password" id="Form-pass1" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="Form-pass1">Your
+                                        password</label>
+                                    <p class="font-small blue-text d-flex justify-content-end">Forgot<a href="#"
+                                            class="blue-text ml-1">Password?</a></p>
+                                </div>
+
+                                <div class="text-center mb-3">
+                                    <button type="button"
+                                        class="btn purple-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+                                </div>
+                                <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2">
+                                    or Sign in with:</p>
+
+                                <div class="row my-3 d-flex justify-content-center">
+                                    <!--Facebook-->
+                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i
+                                            class="fab fa-facebook-f text-center"></i></button>
+                                    <!--Twitter-->
+                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i
+                                            class="fab fa-twitter"></i></button>
+                                    <!--Google +-->
+                                    <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i
+                                            class="fab fa-google-plus-g"></i></button>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer mx-5 pt-3 mb-1">
+                                <p class="font-small grey-text d-flex justify-content-end">Not a member? <a href="#"
+                                        class="blue-text ml-1"> Sign Up</a></p>
+                            </div>
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+                <!-- Modal -->
+
+                <div class="text-center">
+                    <a href="" class="btn purple-gradient btn-rounded" data-toggle="modal"
+                        data-target="#elegantModalForm">login</a>
+                </div>
+
+
+                <!--purple-gradient-->
+
+
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="btn  btn-outline-info" type="submit">Pesquisar</button>
+                </form>
+            </nav>
+        </section>
+    </header>
+
+
+
+    <div id="home" class="corpo">
+        <div id="tituloProdutos">
+            <h2><b>Nossos Produtos</b></h2>
+            <h4>Delícias da Nane</h4>
+            <p>Navegue nesta página e conheça todos os nossos produtos.</p>
+        </div>
+
+        <div class="novidades">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block mx-auto w-100" src="../img/Wallpapers/52c9021048532ae3b840b179291d5ba9.jpg"
+                            alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block mx-auto w-100" src="../img/Wallpapers/8df4f3a2ee9b735b41545842e89db33a.jpg"
+                            alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block mx-auto w-100" src="../img/Wallpapers/99675bd4d5c1bb64c4466e183d223db1.jpg"
+                            alt="Terceiro Slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="destaques">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/bolos/Morango-Nutella.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Morango c/ Nutella</h5>
+                    <p class="card-text">Um dos mais queridos do Brasil</p>
+                    <a href="#" class="btn btn-outline-secondary">Detalhes</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/bolos/banana.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Banana Caramelada</h5>
+                    <p class="card-text">Sabor marcante, doce mas sem exageros</p>
+                    <a href="#" class="btn btn-outline-secondary">Detalhes</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/bolos/limao.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Limão</h5>
+                    <p class="card-text">Um exemplo de que tudo pode ser uma delícia</p>
+                    <a href="#" class="btn btn-outline-secondary">Detalhes</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/bolos/prestigio.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Prestigio</h5>
+                    <p class="card-text">Com pedaços de côco de verdade e um recheio irresistível.</p>
+                    <a href="#" class="btn btn-outline-secondary">Detalhes</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/bolos/prestigio.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Prestigio</h5>
+                    <p class="card-text">Com pedaços de côco de verdade e um recheio irresistível.</p>
+                    <a href="#" class="btn btn-outline-secondary">Detalhes</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/bolos/Morango-Nutella.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Morango c/ Nutella</h5>
+                    <p class="card-text">Um dos mais queridos do Brasil</p>
+                    <a href="#" class="btn btn-outline-secondary">Detalhes</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/bolos/banana.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Banana Caramelada</h5>
+                    <p class="card-text">Sabor marcante, doce mas sem exageros</p>
+                    <a href="#" class="btn btn-outline-secondary">Detalhes</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/bolos/limao.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Limão</h5>
+                    <p class="card-text">Um exemplo de que tudo pode ser uma delícia</p>
+                    <a href="#" class="btn btn-outline-secondary">Detalhes</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/bolos/Morango-Nutella.jpg" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title">Morango c/ Nutella</h5>
+                    <p class="card-text">Um dos mais queridos do Brasil</p>
+                    <a href="#" class="btn btn-outline-secondary">Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--INÍCIO CÓDIGO FOOTER-->
+    <footer class="page-footer font-small pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+                    <!-- Form -->
+                    <form class="form-inline">
+                        <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Pesquisa"
+                            aria-label="Search">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </form>
+                    <!-- Form -->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <form class="input-group">
+                        <input type="text" class="form-control form-control-sm" placeholder="Seu e-mail"
+                            aria-label="Your email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-sm btn-outline-white my-0" type="button">Assinar</button>
+                        </div>
+                    </form>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            <!-- Grid row-->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+                    <div class="mb-5 flex-center">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg blue-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter fa-lg cyan-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in fa-lg blue-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram fa-lg purple-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+
+    </footer>
+
+
+
+
+
+
+</body>
+
+
+
+<script src="../JavaScript/jquery-3.4.1.min.js"></script>
+<script src="../JavaScript/popper.js"></script>
+<script src="../JavaScript/bootstrap.min.js"></script>
+<script src="../JavaScript/mdb.min.js"></script>
+<script src="../JavaScript/script-produtos.js"></script>
+
+
+</html>
