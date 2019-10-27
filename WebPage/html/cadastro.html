@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Delícias da Nane</title>
     <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/pagamento.css">
+    <link rel="stylesheet" href="../CSS/cadastro.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/mdb.min.css">
@@ -157,232 +157,203 @@
 
 
 
-    <div id="home" class="container">
+    <div id="home" class="corpo">
 
-        <div id="tituloProdutos">
+        <div id="tituloCadastro">
             <h2><b>Cadastro</b></h2>
             <h4>Delícias da Nane</h4>
             <p>Preencha os campos do formulário abaixo para concluir seu cadastro em nossa página.</p>
         </div>
 
-        <div class="contato">
-            <div id="contatoBg">
+        <div class="cadastro">
+            <div id="cadastroBg">
                 <div class="container">
-                    <div class="py-5 text-center">
-                        <h2><u><b>Pagamento</b></u></h2>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4 order-md-2 mb-4">
-                            <h4 class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="text-muted">Your cart</span>
-                                <span class="badge badge-secondary badge-pill">3</span>
-                            </h4>
-                            <ul class="list-group mb-3">
-                                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                    <div>
-                                        <h6 class="my-0">Product name</h6>
-                                        <small class="text-muted">Brief description</small>
-                                    </div>
-                                    <span class="text-muted">$12</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                    <div>
-                                        <h6 class="my-0">Second product</h6>
-                                        <small class="text-muted">Brief description</small>
-                                    </div>
-                                    <span class="text-muted">$8</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                    <div>
-                                        <h6 class="my-0">Third item</h6>
-                                        <small class="text-muted">Brief description</small>
-                                    </div>
-                                    <span class="text-muted">$5</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between bg-light">
-                                    <div class="text-success">
-                                        <h6 class="my-0">Promo code</h6>
-                                        <small>EXAMPLECODE</small>
-                                    </div>
-                                    <span class="text-success">-$5</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between">
-                                    <span>Total (USD)</span>
-                                    <strong>$20</strong>
-                                </li>
-                            </ul>
-
-                            <form class="card p-2">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Promo code">
-                                    <div class="input-group-append">
-                                        <button type="submit" class="btn btn-secondary">Redeem</button>
-                                    </div>
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-9 mb-3">
+                                <label for="validationCustom01">Nome completo</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="Nome completo" value="" required>
+                                <div class="valid-feedback">
+                                    Tudo certo!
                                 </div>
-                            </form>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom05">Celular</label>
+                                <input type="tel" class="form-control" id="validationCustom05"
+                                    placeholder="(XX) XXXXX-XXXX" required maxlength="15"
+                                    onkeyup="mascara(this, mtel);">
+                                <div class="invalid-feedback">
+                                    Por favor, informe um CEP válido.
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-8 order-md-1">
-                            <h4 class="mb-3">Billing address</h4>
-                            <form class="needs-validation" novalidate="">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="firstName">First name</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="" value=""
-                                            required="">
-                                        <div class="invalid-feedback">
-                                            Valid first name is required.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="lastName">Last name</label>
-                                        <input type="text" class="form-control" id="lastName" placeholder="" value=""
-                                            required="">
-                                        <div class="invalid-feedback">
-                                            Valid last name is required.
-                                        </div>
-                                    </div>
+                        <div class="form-row">
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom01">Identidade</label>
+                                <input type="text" class="form-control" id="validationCustom01" maxlength="12"
+                                    placeholder="Informe seu RG" value="" onkeyup="mascara(this, mrg);" required>
+                                <div class="valid-feedback">
+                                    Tudo certo!
                                 </div>
-
-                                <div class="mb-3">
-                                    <label for="username">Username</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text">@</span>
-                                        </div>
-                                        <input type="text" class="form-control" id="username" placeholder="Username"
-                                            required="">
-                                        <div class="invalid-feedback" style="width: 100%;">
-                                            Your username is required.
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom01">Órgão Emissor</label>
+                                <input type="text" class="form-control" id="validationCustom01" maxlength="10" value=""
+                                    required>
+                                <div class="valid-feedback">
+                                    Tudo certo!
                                 </div>
-
-                                <div class="mb-3">
-                                    <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                                    <div class="invalid-feedback">
-                                        Please enter a valid email address for shipping updates.
-                                    </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom05">Data de Exp.</label>
+                                <input type="tel" class="form-control" id="validationCustom05" placeholder="Emitida em"
+                                    required maxlength="10" onkeyup="mascara(this, mdata);">
+                                <div class="invalid-feedback">
+                                    Por favor, informe um CEP válido.
                                 </div>
-
-                                <div class="mb-3">
-                                    <label for="address">Address</label>
-                                    <input type="text" class="form-control" id="address" placeholder="1234 Main St"
-                                        required="">
-                                    <div class="invalid-feedback">
-                                        Please enter your shipping address.
-                                    </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom05">CPF</label>
+                                <input type="tel" class="form-control" id="validationCustom05"
+                                    placeholder="Informe seu CPF" required maxlength="14"
+                                    onkeyup="mascara(this, mcpf);">
+                                <div class="invalid-feedback">
+                                    Por favor, informe um CPF válido.
                                 </div>
-
-                                <div class="mb-3">
-                                    <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-                                    <input type="text" class="form-control" id="address2"
-                                        placeholder="Apartment or suite">
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-5 mb-3">
-                                        <label for="country">Country</label>
-                                        <select class="custom-select d-block w-100" id="country" required="">
-                                            <option value="">Choose...</option>
-                                            <option>United States</option>
-                                        </select>
-                                        <div class="invalid-feedback">
-                                            Please select a valid country.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <label for="state">State</label>
-                                        <select class="custom-select d-block w-100" id="state" required="">
-                                            <option value="">Choose...</option>
-                                            <option>California</option>
-                                        </select>
-                                        <div class="invalid-feedback">
-                                            Please provide a valid state.
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="zip">Zip</label>
-                                        <input type="text" class="form-control" id="zip" placeholder="" required="">
-                                        <div class="invalid-feedback">
-                                            Zip code required.
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="mb-4">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="same-address">
-                                    <label class="custom-control-label" for="same-address">Shipping address is the same
-                                        as my billing address</label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="save-info">
-                                    <label class="custom-control-label" for="save-info">Save this information for next
-                                        time</label>
-                                </div>
-                                <hr class="mb-4">
-
-                                <h4 class="mb-3">Payment</h4>
-
-                                <div class="d-block my-3">
-                                    <div class="custom-control custom-radio">
-                                        <input id="credit" name="paymentMethod" type="radio"
-                                            class="custom-control-input" checked="" required="">
-                                        <label class="custom-control-label" for="credit">Credit card</label>
-                                    </div>
-                                    <div class="custom-control custom-radio">
-                                        <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"
-                                            required="">
-                                        <label class="custom-control-label" for="debit">Debit card</label>
-                                    </div>
-                                    <div class="custom-control custom-radio">
-                                        <input id="paypal" name="paymentMethod" type="radio"
-                                            class="custom-control-input" required="">
-                                        <label class="custom-control-label" for="paypal">Paypal</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="cc-name">Name on card</label>
-                                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                                        <small class="text-muted">Full name as displayed on card</small>
-                                        <div class="invalid-feedback">
-                                            Name on card is required
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="cc-number">Credit card number</label>
-                                        <input type="text" class="form-control" id="cc-number" placeholder=""
-                                            required="">
-                                        <div class="invalid-feedback">
-                                            Credit card number is required
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3 mb-3">
-                                        <label for="cc-expiration">Expiration</label>
-                                        <input type="text" class="form-control" id="cc-expiration" placeholder=""
-                                            required="">
-                                        <div class="invalid-feedback">
-                                            Expiration date required
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 mb-3">
-                                        <label for="cc-expiration">CVV</label>
-                                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                                        <div class="invalid-feedback">
-                                            Security code required
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="mb-4">
-                                <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to
-                                    checkout</button>
-                            </form>
+                            </div>
                         </div>
-                    </div>
+                        <div class="form-row">
+                            <div class="col-md-8 mb-3">
+                                <label for="validationCustom01">Endereço</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="Rua, Avenida, Estrada, ..." value="" required>
+                                <div class="valid-feedback">
+                                    Tudo certo!
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="validationCustom01">Número</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="número"
+                                    value="" required>
+                                <div class="valid-feedback">
+                                    Tudo certo!
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-3">
+                                <label for="validationCustom01">Complemento</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="Apto., Casa, ..." value="" required>
+                                <div class="valid-feedback">
+                                    Tudo certo!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Bairro</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Bairro"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe seu bairro.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">Cidade</label>
+                                <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe sua Cidade.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom03">Estado</label>
+                                <input type="text" class="form-control" id="validationCustom04" placeholder="Estado"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe seu estado.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom05">CEP</label>
+                                <input type="text" class="form-control" id="validationCustom05" placeholder="XXXXX-XXX"
+                                    required onkeyup="mascara(this, mcep);" maxlength="9">
+                                <div class="invalid-feedback">
+                                    Por favor, informe um CEP válido.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom03">E-mail</label>
+                                <input type="text" class="form-control" id="validationCustom03"
+                                    placeholder="exemplo@seue-mail.com" required>
+                                <div class="invalid-feedback">
+                                    Por favor, informe um e-mail válido.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom06">Senha</label>
+                                <input type="password" class="form-control" id="validationCustom06" minlength="8"
+                                    maxlength="20" required aria-describedby="passwordHelpBlock">
+                                <small id="passwordHelpBlock" class="form-text text-muted">
+                                    Sua senha deve ter entre 8 e 20 caracteres.
+                                </small>
+                                <div class="invalid-feedback">
+                                    Por favor, informe uma senha válida.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom06">Confirme sua senha</label>
+                                <input type="password" class="form-control" id="validationPassword5" minlength="8"
+                                    maxlength="20" required aria-describedby="passwordHelpBlock">
+                                <small id="passwordHelpBlock" class="form-text text-muted">
+                                    Repita sua senha.
+                                </small>
+                                <div class="invalid-feedback">
+                                    Por favor, informe uma senha válida.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Concordo com os termos e condições
+                                </label>
+                                <div class="invalid-feedback">
+                                    Você deve concordar, antes de continuar.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </form>
+
+                    <script>
+                        // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+                        (function () {
+                            'use strict';
+                            window.addEventListener('load', function () {
+                                // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+                                var forms = document.getElementsByClassName('needs-validation');
+                                // Faz um loop neles e evita o envio
+                                var validation = Array.prototype.filter.call(forms, function (form) {
+                                    form.addEventListener('submit', function (event) {
+                                        if (form.checkValidity() === false) {
+                                            event.preventDefault();
+                                            event.stopPropagation();
+                                        }
+                                        form.classList.add('was-validated');
+                                    }, false);
+                                });
+                            }, false);
+                        })();
+                    </script>
+
+
+
+
+
                 </div>
             </div>
         </div>

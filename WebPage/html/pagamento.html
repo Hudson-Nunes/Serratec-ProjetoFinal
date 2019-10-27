@@ -162,7 +162,7 @@
         <div id="tituloProdutos">
             <h2><b>Pagamento</b></h2>
             <h4>Delícias da Nane</h4>
-            <p>Preencha os campos do formulário abaixo para concluir seu cadastro em nossa página.</p>
+            <p>Preencha os campos do formulário abaixo para concluir sua compra conosco.</p>
         </div>
 
         <div class="contato">
@@ -213,6 +213,19 @@
                         </div>
                         <div class="col-md-8 order-md-1">
                             <h4 class="mb-3">Endereço de cobrança</h4>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="same-address">
+                                <label class="custom-control-label" for="same-address">O endereço de cobrança é igual
+                                    ao meu endereço de entrega.</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="save-info">
+                                <label class="custom-control-label" for="save-info">Salve essas informações para o
+                                    próxima acesso.</label>
+                            </div>
+                            <hr class="mb-4">
+
                             <form class="needs-validation" novalidate="">
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
@@ -288,17 +301,6 @@
                                     </div>
                                 </div>
                                 <hr class="mb-4">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="same-address">
-                                    <label class="custom-control-label" for="same-address">O endereço de entrega é igual
-                                        ao meu endereço de cobrança.</label>
-                                </div>
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="save-info">
-                                    <label class="custom-control-label" for="save-info">Salve essas informações para o
-                                        próxima acesso.</label>
-                                </div>
-                                <hr class="mb-4">
 
                                 <h4 class="mb-3">Pagamento</h4>
 
@@ -319,9 +321,9 @@
                                         <label class="custom-control-label" for="paypal">Paypal</label>
                                     </div>
                                     <div class="custom-control custom-radio">
-                                        <input id="paypal" name="paymentMethod" type="radio"
+                                        <input id="boleto" name="paymentMethod" type="radio"
                                             class="custom-control-input" required="">
-                                        <label class="custom-control-label" for="paypal">Boleto</label>
+                                        <label class="custom-control-label" for="boleto">Boleto</label>
                                     </div>
                                 </div>
                                 <div class="row">
