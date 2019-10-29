@@ -1,3 +1,4 @@
+//SCRIPT PARA ESCONDER MENU
 $('.menu a[href^="#"]').on('click', function (e) {
   e.preventDefault();
   var id = $(this).attr('href'),
@@ -12,6 +13,13 @@ $('.menu a[href^="#"]').on('click', function (e) {
 
 
 
+
+
+
+
+
+
+//SCRIPT PARA ROLAGEM SUAVE
 $(window).scroll(function () {
   // 100 = The point you would like to fade the nav in.
 
@@ -71,6 +79,8 @@ function showSlides(n) {
 
 
 
+
+//SCRIPTs DAS MÁSCARAS PARA CADASTRO
 function mascara(o, f) {
   v_obj = o
   v_fun = f
