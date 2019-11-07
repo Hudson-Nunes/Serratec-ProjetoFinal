@@ -10,15 +10,6 @@ $('.menu a[href^="#"]').on('click', function (e) {
 });
 
 
-
-
-
-
-
-
-
-
-
 //SCRIPT PARA ROLAGEM SUAVE
 $(window).scroll(function () {
   // 100 = The point you would like to fade the nav in.
@@ -130,3 +121,5 @@ function mcpf(v) {
   v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2") //Coloca um hífen entre o terceiro e o quarto dígitos
   return v
 }
+
+

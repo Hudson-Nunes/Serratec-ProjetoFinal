@@ -1,6 +1,4 @@
 
-
-
 body{
     margin: 0;
     padding: 0;
@@ -166,7 +164,8 @@ header{
 }
 
 .mySlides img{
-    min-height: 450px;
+    min-height: 400px;
+    max-height: 400px;
 }
   
 /* Add a pointer when hovering over the thumbnail images */
@@ -232,6 +231,7 @@ header{
 }
 
 .rowSlides img{
+    min-height: 75px;
     max-height: 75px;
 }
 
@@ -253,28 +253,113 @@ header{
 
 .descricaoProdutos{
     width: 45%;
-    height: 200px;
     background-color: #FFF9AC;
     padding: 20px;
     margin-bottom: 20px;
     text-align: left;
     float: right;
     top: 0;
-    border-bottom: double 5px gray;
+    right: 20px;
+    border: solid 2px #FFABC1;
+    border-radius: 10px;
     position: relative;
 }
 
-.precoProdutos{
-    width: 45%;
-    height: 200px;
-    background-color: #FFF9AC;
-    padding: 20px;
-    text-align: left;
-    float: right;
-    top: 0;
-    border-bottom: solid 1px gray;
+.descricaoProdutos #botoes{
+    display: flex;
+    align-items: baseline;
+}
+
+
+
+/*ESTILIZAÇÃO DO CONTADOR*/
+.number-input input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.number-input input[type=number]::-webkit-inner-spin-button,
+.number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input {
+    margin-bottom: 3rem;
+}
+
+.number-input button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;   
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
     position: relative;
 }
+
+.number-input button:before,
+.number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+}
+
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+    text-align: center;
+}
+
+.number-input.number-input {
+    border: 1px solid #ced4da;
+    width: 10rem;
+    border-radius: .25rem;
+}
+
+.number-input.number-input button {
+    width: 2.6rem;
+    height: .7rem;
+}
+
+.number-input.number-input button.minus {
+    padding-left: 10px;
+}
+
+.number-input.number-input button:before,
+.number-input.number-input button:after {
+    width: .7rem;
+    background-color: #495057;
+}
+
+.number-input.number-input input[type=number] {
+    max-width: 4rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1rem;
+    height: 2rem;
+    color: #495057;
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color:transparent) {
+        .number-input.def-number-input.safari_only button:before,
+        .number-input.def-number-input.safari_only button:after {
+        margin-top: -.3rem;
+        }
+    }
+}
+/*FIM ESTILIZAÇÃO CONTADOR
+
+
+
+
 
 
 /* INICIO CÓDIGO FOOTER*/
